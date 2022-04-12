@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Watson Lab Behavioral Box : Arduino-based Diagnostics Procedure</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Watson Lab Behavioral Box</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="Watson-Lab---Behavioral-Box-Home_141559292.html">Watson Lab - Behavioral Box Home</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="Behavioral-Box-Project_141559650.html">Behavioral Box Project</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="Procedures_141561886.html">Procedures</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                            Watson Lab Behavioral Box : Arduino-based Diagnostics Procedure
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                        
+        
+    
+        
+    
+        
+        
+            Created by <span class='author'> Pho Hale</span>, last modified by <span class='editor'> Brendon Omar Watson</span> on Aug 18, 2020
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <p>For...</p><p><br/></p><ol><li>Plug long USB cable into bb16 computer and into Arduino of interest on other end</li><li>Open Arduino software (green circle with infinity sign) (do not update if asked)</li><li>File &gt; Open Recent &gt; &quot;Food_hopper_pho&quot;<ol><li>Located at: <span style="color: rgb(34,34,34);">C:\Common\repo\Food_hopper_pho</span></li><li>Must be a folder with multiple other files in it such as Common.h</li></ol></li><li>Tools &gt; Port &gt; COMXX ArduinoXXX</li><li>Select the tab called common.h (common.h is a text file)</li><li>Find the line starting with #define IS_DIAGNOSTIC_MODE</li><li>In that line, change false to true</li><li>Save</li><li><span style="color: rgb(32,33,36);">Upload firmware by clicking icon near top of app, under Edit menu with right-pointing arrow </span></li><li><span style="color: rgb(32,33,36);">You are done in arduino software - but leave open for now <br/></span></li><li><span style="color: rgb(32,33,36);">xxxxx</span></li><li><span style="color: rgb(32,33,36);">Open FoodHopperDebug (a script in the language and App called Processing ) - could be under start</span><ol><li>C:\Common\repo\FoodHopperDebug\FoodHopperDebug.pde</li></ol></li><li><span style="color: rgb(32,33,36);">Hit the Run button if it's not running (right-pointing arrow)</span></li><li><span style="color: rgb(32,33,36);">See colorful GUI with button if Arduino is found on the usb cable - if no Arduino is found it initially shows as blank then errors (keeps looking for a bit so you could plug in Arduino now)</span></li><li><span style="color: rgb(32,33,36);">Once it's open you should see a colorful GUI, with two food panels on left and two food-related panels on the right</span></li><li><span style="color: rgb(32,33,36);">Note for specifying which food or water dispenser: we have a 0 or 1 system.  0 denotes the food/water dispenser closer to the &quot;origin&quot; or front of the box and 1 the one more distal.  That origin/front of the box is the corner with a hole in it (maybe plugged with gray foam) - near the LabJack.   </span></li><li><span style="color: rgb(32,33,36);">To control food-related functions:</span><ol><li><span style="color: rgb(32,33,36);">Top buttons</span><ol><li><span style="color: rgb(32,33,36);">&quot;Normal&quot; button - do the next dispense move - 4 out of 5 go forward or 1 of 5 go back </span><span style="color: rgb(32,33,36);">&quot;Reverse&quot; button always executes a backward movement </span></li></ol></li><li><span style="color: rgb(32,33,36);">Bottom buttons are two means by which to try to unjam </span><ol><li><span style="color: rgb(32,33,36);">Tick tock goes back and forth</span></li><li><span style="color: rgb(32,33,36);">Simple reverse</span></li></ol></li><li><span style="color: rgb(32,33,36);">Auto dispense toggle- dispense every 5 sec<br/></span></li></ol></li><li><span style="color: rgb(32,33,36);">To control water-related functions:</span><ol><li><span style="color: rgb(32,33,36);">Open or close solenoid by clicking on solenoid icon <br/>- should toggle it to keep it permanently one or closed</span></li><li><span style="color: rgb(32,33,36);">&quot;Normal dispense&quot; button executes a standard 300ms open close of the solenoid </span></li></ol></li><li><span style="color: rgb(32,33,36);">xxxxx</span></li><li><span style="color: rgb(32,33,36);">When finished close debug software (gives control of port back to Arduino software) </span></li><li><span style="color: rgb(32,33,36);">Go back to the Arduino code common.h</span></li><li>Find the line starting with #define IS_DIAGNOSTIC_MODE</li><li>In that line, change true back to false</li><li>Save</li><li><span style="color: rgb(32,33,36);">Upload firmware by clicking icon near top of app, under Edit menu with right-pointing arrow </span></li><li><span style="color: rgb(32,33,36);">Do NOT unplug the Arduino while firmware still uploading!  (button will stop being yellow when upload is done)</span></li><li><span style="color: rgb(32,33,36);">After upload, you may unplug the USB between the computer and Arduino<br/><br/><br/><br/></span></li></ol>
+                    </div>
+
+                                        
+                                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on Mar 24, 2022 11:12</p>
+                    <div id="footer-logo"><a href="http://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>

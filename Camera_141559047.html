@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Watson Lab Behavioral Box : Camera</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Watson Lab Behavioral Box</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="Watson-Lab---Behavioral-Box-Home_141559292.html">Watson Lab - Behavioral Box Home</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="Behavioral-Box-Project_141559650.html">Behavioral Box Project</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="Components_141561496.html">Components</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                            Watson Lab Behavioral Box : Camera
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                        
+        
+    
+        
+    
+        
+        
+            Created by <span class='author'> Paul Joachim Fitzgerald</span>, last modified by <span class='editor'> Anjesh Ghimire</span> on May 21, 2021
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <p><br/></p><p><br/></p><p><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image" height="250" src="attachments/141559047/141559049.jpg" data-image-src="attachments/141559047/141559049.jpg" data-unresolved-comment-count="0" data-linked-resource-id="141559049" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="Camera - top view.JPG" data-base-url="https://wiki.med.umich.edu" data-linked-resource-content-type="image/jpeg" data-linked-resource-container-id="141559047" data-linked-resource-container-version="16"></span></p><p><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image" height="250" src="attachments/141559047/141559048.jpg" data-image-src="attachments/141559047/141559048.jpg" data-unresolved-comment-count="0" data-linked-resource-id="141559048" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="Camera - side view.JPG" data-base-url="https://wiki.med.umich.edu" data-linked-resource-content-type="image/jpeg" data-linked-resource-container-id="141559047" data-linked-resource-container-version="16"></span></p><p><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image" height="400" src="attachments/141559047/187433279.jpg" data-image-src="attachments/141559047/187433279.jpg" data-unresolved-comment-count="0" data-linked-resource-id="187433279" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="View through camera.jpg" data-base-url="https://wiki.med.umich.edu" data-linked-resource-content-type="image/jpeg" data-linked-resource-container-id="141559047" data-linked-resource-container-version="16"></span></p><p><br/></p><p><strong>Description modified from I.Cerda Thesis:</strong></p><p>Our system makes use of an camera (Basler acA1300-200 um) attached to a 4mm lens and IR filter. Each camera connects to a local computer via USB3 and produces an .MKV video file every 4 hours. Currently, we use a custom version of Open Broadcast Software (OBS) to record/output at a scaled resolution of 640x512 at 30 fps.</p><p>The Digital Homecage system has an infrared LED backlight that remains perpetually lit behind a translucent acrylic plexiglass panel (1/4” x 13.5” x 24”), which diffuses the IR light, allowing for even illumination. The wavelength of the infrared light falls below the detection threshold for mice, allowing for continuous recording, even in dark hours. The .mkv video files are ultimately converted to .mp4 files on BB-Overseer via HandBrakeBatchBeast (HBBB).</p><p>Note: .mkv files are much larger in size than .mp4 files. However, the .mkv format allows for playback of corrupted files, which .mp4 does not support.</p><p>We will use HomeCageScan (a commercial rodent behavioral analysis software), which uses .mp4 files, to analyze our recorded videos. So we have to convert the original .mkv video files to .mp4.</p><p><br/></p><div class="confluence-information-macro confluence-information-macro-information"><p class="title">Camera components:</p><span class="aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon"></span><div class="confluence-information-macro-body"><p><span style="color: rgb(32,33,36);text-decoration: none;">Camera: </span>CABR133</p><p>1280 x 1024 1/2&quot; Monochrome CMOS USB3 Camera <a href="https://machinevisionstore.com/mfg/basler" style="text-decoration: underline;" class="external-link" rel="nofollow">Basler</a><span> </span>Ace U acA1300-200um</p><p><span style="color: rgb(32,33,36);text-decoration: none;">Exposure Time: 80,000</span></p><p>link: <a href="https://machinevisionstore.com/Catalog/Details/970" class="external-link" rel="nofollow">https://machinevisionstore.com/Catalog/Details/970</a></p><p><br/></p><p>Lens: LSBR200</p><p>1/2.5&quot; 4 mm 5 MegaPixel Lens, <a style="text-decoration: underline;" href="https://machinevisionstore.com/mfg/basler" class="external-link" rel="nofollow">Basler</a><span> </span>C125-0418-5M</p><p>link: <a href="https://machinevisionstore.com/Catalog/Details/1461" class="external-link" rel="nofollow">https://machinevisionstore.com/Catalog/Details/1461</a></p><p><br/></p><p>IR filter: FRMS208</p><p>NIR Bandpass Filter, 46.0 mm Thread Midwest Optical Filters</p><p>link: <a href="https://machinevisionstore.com/catalog/details/5896" class="external-link" rel="nofollow">https://machinevisionstore.com/catalog/details/5896</a></p><p><br/></p><p>Lens adapter for IR filter: LSBR903</p><p>Filter Adapter for Basler Lens </p><p>Link: <a href="https://machinevisionstore.com/Catalog/Details/1467" class="external-link" rel="nofollow">https://machinevisionstore.com/Catalog/Details/1467</a></p><p><br/></p></div></div><div class="confluence-information-macro confluence-information-macro-information"><p class="title">Camera 3-d printed tripod file:</p><span class="aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon"></span><div class="confluence-information-macro-body"><p><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image" height="400" src="attachments/141559047/187433270.png" data-image-src="attachments/141559047/187433270.png" data-unresolved-comment-count="0" data-linked-resource-id="187433270" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="Solidworks picture of camera v19 from.png" data-base-url="https://wiki.med.umich.edu" data-linked-resource-content-type="image/png" data-linked-resource-container-id="141559047" data-linked-resource-container-version="16"></span></p><p><br/></p><p>Solidworks file for camera tripod system pictured above:</p><p><span class="confluence-embedded-file-wrapper"><a class="confluence-embedded-file" href="/download/attachments/141559047/Camera%20Stand%20-%2019.SLDPRT?version=1&amp;modificationDate=1621627412465&amp;api=v2" data-nice-type="null" data-file-src="/download/attachments/141559047/Camera%20Stand%20-%2019.SLDPRT?version=1&amp;modificationDate=1621627412465&amp;api=v2" data-linked-resource-id="187433273" data-linked-resource-type="attachment" data-linked-resource-container-id="141559047" data-linked-resource-default-alias="Camera Stand - 19.SLDPRT" data-mime-type="application/octet-stream" data-has-thumbnail="false" data-linked-resource-version="1" data-can-edit="true" aria-label="Camera Stand - 19.SLDPRT"><img src="download/resources/com.atlassian.confluence.plugins.confluence-view-file-macro:view-file-macro-resources/images/placeholder-small-file.png" height="150"/><span class="title">Camera Stand - 19.SLDPRT</span></a><span class="companion-edit-button-placeholder edit-button-overlay" data-linked-resource-container-id="141559047" data-linked-resource-id="187433273" data-template-name="companionEditIcon" data-source-location="embedded-attachment"></span></span> </p></div></div><h2 id="Camera-Relatedarticles">Related articles</h2><p></p><p>
+
+
+
+
+
+
+
+
+
+
+
+    <div class="content-by-label macro-blank-experience">
+        <strong class="content-label-header">Content by label</strong>
+        <p>There is no content with the specified labels</p>
+    </div>
+</p><p><br/></p><p><br/></p><p><br/></p><p><br/></p><p><br/></p><p><br/></p><p><br/></p>
+                    </div>
+
+                                                            <div class="pageSection group">
+                        <div class="pageSectionHeader">
+                            <h2 id="attachments" class="pageSectionTitle">Attachments:</h2>
+                        </div>
+
+                        <div class="greybox" align="left">
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/141559047/141559048.jpg">Camera - side view.JPG</a> (image/jpeg)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/141559047/141559049.jpg">Camera - top view.JPG</a> (image/jpeg)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/141559047/187433270.png">Solidworks picture of camera v19 from.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/141559047/187433273.sldprt">Camera Stand - 19.SLDPRT</a> (application/octet-stream)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/141559047/187433279.jpg">View through camera.jpg</a> (image/jpeg)
+                                <br/>
+                                                    </div>
+                    </div>
+                    
+                                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on Mar 24, 2022 11:12</p>
+                    <div id="footer-logo"><a href="http://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Watson Lab Behavioral Box : Output File Format</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Watson Lab Behavioral Box</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="Watson-Lab---Behavioral-Box-Home_141559292.html">Watson Lab - Behavioral Box Home</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="Behavioral-Box-Project_141559650.html">Behavioral Box Project</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="Software-Ecosystem_141561507.html">Software Ecosystem</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="Client-Software_147658139.html">Client Software</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="phoBehavioralBoxLabjackController_141560203.html">phoBehavioralBoxLabjackController</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                            Watson Lab Behavioral Box : Output File Format
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                        
+        
+    
+        
+    
+        
+        
+            Created by <span class='author'> Pho Hale</span>, last modified on Oct 09, 2019
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <p>A new .CSV output file is created for each found Labjack when the phoBehavioralBoxLabjackController software is started.</p><pre>out_file_s{recordingLabjackSerialNumber}_{unix_Epoch_Timestamp}.csv</pre><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup><col/><col/></colgroup><tbody><tr><th class="confluenceTh">Component</th><th class="confluenceTh">Description</th></tr><tr><td class="confluenceTd"><code>recordingLabjackSerialNumber</code></td><td class="confluenceTd">The serial number of the Labjack that the file belongs to</td></tr><tr><td class="confluenceTd"><code>unix_Epoch_Timestamp</code></td><td class="confluenceTd"><p>This timestamp corresponds to the start of the current instance of the phoBehavioralBoxLabjackController software. This value is represented in terms of the number of milliseconds elapsed since the unix epoch (00/00/1970 0:00 GMT). </p></td></tr></tbody></table></div><h3 class="auto-cursor-target" id="OutputFileFormat-FileContents">File Contents</h3><p>The first line of any .CSV file will be a header describing the comma-separated values.</p><p>The second line is an entry containing all '1' values, corresponding to the moment of initialization for a given Labjack.</p><p><br/></p><p><br/></p><p><br/></p><h3 id="OutputFileFormat-FormatVersions:">Format Versions:</h3><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup><col/><col/><col/><col/></colgroup><tbody><tr><th colspan="1" class="confluenceTh">Version #</th><th class="confluenceTh">Format</th><th colspan="1" class="confluenceTh">Description</th><th class="confluenceTh">Use Dates</th></tr><tr><td colspan="1" class="confluenceTd">1</td><td class="confluenceTd">behavioralBox_{recordingLabjackSerialNumber}_{YYYYMMDD}_{fileNameNumberingSuffix}</td><td colspan="1" class="confluenceTd">fileNameNumberingSuffix: 3 digit number sequentially incremented.</td><td class="confluenceTd">Unknown</td></tr><tr><td colspan="1" class="confluenceTd">2</td><td class="confluenceTd">out_file_s{recordingLabjackSerialNumber}_{unix_Epoch_Timestamp}.csv</td><td colspan="1" class="confluenceTd"><br/></td><td class="confluenceTd">Current</td></tr></tbody></table></div>
+                    </div>
+
+                                        
+                                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on Mar 24, 2022 11:12</p>
+                    <div id="footer-logo"><a href="http://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>

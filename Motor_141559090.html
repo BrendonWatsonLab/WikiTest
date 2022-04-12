@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Watson Lab Behavioral Box : Motor</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Watson Lab Behavioral Box</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="Watson-Lab---Behavioral-Box-Home_141559292.html">Watson Lab - Behavioral Box Home</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="Behavioral-Box-Project_141559650.html">Behavioral Box Project</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="Components_141561496.html">Components</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                            Watson Lab Behavioral Box : Motor
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                        
+        
+    
+        
+    
+        
+        
+            Created by <span class='author'> Paul Joachim Fitzgerald</span>, last modified by <span class='editor'> Pho Hale</span> on Jul 09, 2020
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <div class="contentLayout2">
+<div class="columnLayout single" data-layout="single">
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<p><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image" height="250" src="attachments/141559090/141559092.jpg" data-image-src="attachments/141559090/141559092.jpg" data-unresolved-comment-count="0" data-linked-resource-id="141559092" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="Motor - front view.JPG" data-base-url="https://wiki.med.umich.edu" data-linked-resource-content-type="image/jpeg" data-linked-resource-container-id="141559090" data-linked-resource-container-version="5"></span></p><p><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image" height="250" src="attachments/141559090/141559093.jpg" data-image-src="attachments/141559090/141559093.jpg" data-unresolved-comment-count="0" data-linked-resource-id="141559093" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="Motor - back view.JPG" data-base-url="https://wiki.med.umich.edu" data-linked-resource-content-type="image/jpeg" data-linked-resource-container-id="141559090" data-linked-resource-container-version="5"></span><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image" height="250" src="attachments/141559090/141559094.jpg" data-image-src="attachments/141559090/141559094.jpg" data-unresolved-comment-count="0" data-linked-resource-id="141559094" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="Motor - top view.JPG" data-base-url="https://wiki.med.umich.edu" data-linked-resource-content-type="image/jpeg" data-linked-resource-container-id="141559090" data-linked-resource-container-version="5"></span></p><p><br/></p><p><span>For a given stepper <a href="Motor_141559090.html">Motor</a> there are two coils inside, each needing 2 output wires (for a total of 4 output wires)</span></p><p><span>Each pair of wires belongs to the left/right end of a single coil inside the motor called a &quot;phase&quot;.</span></p><p><span>The wires must be grouped appropriately for the stepper to work, but the order within a group determine the direction of stepper motor rotation (clockwise/counterclockwise).</span></p><br/><div class="confluence-information-macro confluence-information-macro-information"><span class="aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon"></span><div class="confluence-information-macro-body"><h4 id="Motor-Notes(May6,2019):">Notes (May 6, 2019):</h4><p><span style="color: rgb(32,33,36);text-decoration: none;">Stepper motors use the most current when they're idle! They require current to remain fixed in place. </span><br style="text-decoration: none;"/><br style="text-decoration: none;"/><span style="color: rgb(32,33,36);text-decoration: none;">Our motors get very hot, up to 130 degrees F with the 12V 2A adapter.</span><br style="text-decoration: none;"/><span style="color: rgb(32,33,36);text-decoration: none;">They typically require being fixed to a metal chassis that cools them.</span><br style="text-decoration: none;"/><span style="color: rgb(32,33,36);text-decoration: none;">The temp-testing for the external box didn't have running motors inside, meaning our cooling solution may not be adequate.</span><br style="text-decoration: none;"/><br style="text-decoration: none;"/><span style="color: rgb(32,33,36);text-decoration: none;">- The Pellet Distributor Modern 8 design slips ever-so-slightly on the shaft. This induces a slight phase offset. Seems only fixable by properly mounting them to the shaft. This seems to be responsible for many of the phase offset problems, and for the failed vends, but not for the &quot;jamming&quot;.</span><br style="text-decoration: none;"/><br style="text-decoration: none;"/><span style="color: rgb(32,33,36);text-decoration: none;">- The part that sticks up for the screws to be inserted into (the rim of the hole) on the top might not be dimensioned correctly.</span><br style="text-decoration: none;"/><br style="text-decoration: none;"/><span style="color: rgb(32,33,36);text-decoration: none;">- The motor mount hole is too small. I think the problem may have occurred when trying to get it to socket into the top part. The previous versions seem to be sized correctly.</span><br style="text-decoration: none;"/><br style="text-decoration: none;"/><span style="color: rgb(32,33,36);text-decoration: none;">-- With the screws screwed all the way down, the right wheel seems to be working correctly even when powered just from the USB. This wheel did have some blue mounting putty in it, but I took this out earlier, and just the reminants are left.</span></p></div></div><h2 id="Motor-Relatedarticles">Related articles</h2><p></p><p>
+
+
+
+
+
+
+
+
+
+
+
+    <div class="content-by-label macro-blank-experience">
+        <strong class="content-label-header">Content by label</strong>
+        <p>There is no content with the specified labels</p>
+    </div>
+</p><p><br/></p><p><br/></p></div>
+</div>
+</div>
+<div class="columnLayout single" data-layout="single">
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<h1 id="Motor-Connections:">Connections:</h1><p><br/></p><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup><col/><col/><col/><col/></colgroup><tbody><tr><th colspan="1" class="confluenceTh"><br/></th><th colspan="1" class="confluenceTh">Stepper Motor Coil</th><th class="confluenceTh">Stepper <a href="Motor_141559090.html">Motor</a> Wire Colors</th><th class="confluenceTh"><a href="Motor_141559090.html">Motor</a> Screw Terminal</th></tr><tr><td rowspan="5" class="confluenceTd">Stepper Motor <strong>0</strong></td><td rowspan="2" class="confluenceTd">Phase <strong>0</strong></td><td class="confluenceTd"><span style="color: rgb(0,128,0);">Green</span></td><td class="confluenceTd">M<strong>1</strong></td></tr><tr><td class="confluenceTd"><strong><span style="color: rgb(0,0,0);">Black</span></strong></td><td class="confluenceTd">M<strong>1</strong> (Closest to Center)</td></tr><tr><td colspan="1" class="confluenceTd">-</td><td class="confluenceTd">-</td><td class="confluenceTd">-</td></tr><tr><td rowspan="2" class="confluenceTd">Phase <strong>1</strong></td><td class="confluenceTd"><span style="color: rgb(0,0,128);">Blue</span></td><td class="confluenceTd">M<strong>2</strong> (Closest to Center)</td></tr><tr><td class="confluenceTd"><span style="color: rgb(128,0,0);">Red</span></td><td class="confluenceTd">M<strong>2</strong></td></tr></tbody></table></div><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup><col/><col/><col/><col/></colgroup><tbody><tr><th colspan="1" class="confluenceTh"><br/></th><th colspan="1" class="confluenceTh">Stepper Motor Coil</th><th class="confluenceTh">Stepper <a href="Motor_141559090.html">Motor</a> Wire Colors</th><th class="confluenceTh"><a href="Motor_141559090.html">Motor</a> Screw Terminal</th></tr><tr><td rowspan="5" class="confluenceTd">Stepper Motor <strong>1</strong></td><td rowspan="2" class="confluenceTd">Phase <strong>0</strong></td><td class="confluenceTd"><span style="color: rgb(0,128,0);">Green</span></td><td class="confluenceTd">M<strong>3</strong></td></tr><tr><td class="confluenceTd"><strong><span style="color: rgb(0,0,0);">Black</span></strong></td><td class="confluenceTd">M<strong>3</strong> (Closest to Center)</td></tr><tr><td colspan="1" class="confluenceTd">-</td><td class="confluenceTd">-</td><td class="confluenceTd">-</td></tr><tr><td rowspan="2" class="confluenceTd">Phase <strong>1</strong></td><td class="confluenceTd"><span style="color: rgb(0,0,128);">Blue</span></td><td class="confluenceTd">M<strong>4</strong> (Closest to Center)</td></tr><tr><td class="confluenceTd"><span style="color: rgb(128,0,0);">Red</span></td><td class="confluenceTd">M<strong>4</strong></td></tr></tbody></table></div></div>
+</div>
+</div>
+</div>
+                    </div>
+
+                                                            <div class="pageSection group">
+                        <div class="pageSectionHeader">
+                            <h2 id="attachments" class="pageSectionTitle">Attachments:</h2>
+                        </div>
+
+                        <div class="greybox" align="left">
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/141559090/141559092.jpg">Motor - front view.JPG</a> (image/jpeg)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/141559090/141559093.jpg">Motor - back view.JPG</a> (image/jpeg)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/141559090/141559094.jpg">Motor - top view.JPG</a> (image/jpeg)
+                                <br/>
+                                                    </div>
+                    </div>
+                    
+                                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on Mar 24, 2022 11:12</p>
+                    <div id="footer-logo"><a href="http://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>

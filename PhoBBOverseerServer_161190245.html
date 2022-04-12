@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Watson Lab Behavioral Box : PhoBBOverseerServer</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Watson Lab Behavioral Box</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="Watson-Lab---Behavioral-Box-Home_141559292.html">Watson Lab - Behavioral Box Home</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="Behavioral-Box-Project_141559650.html">Behavioral Box Project</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="Software-Ecosystem_141561507.html">Software Ecosystem</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="Analysis-Software_141563078.html">Analysis Software</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                            Watson Lab Behavioral Box : PhoBBOverseerServer
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                        
+        
+    
+        
+    
+        
+        
+            Created by <span class='author'> Pho Hale</span>, last modified on Aug 22, 2020
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <div class="contentLayout2">
+<div class="columnLayout two-equal" data-layout="two-equal">
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<p>Link: https://github.com/BrendonWatsonLab/PhoBBOverseerServer/tree/master</p><p>Platform: Windows</p><p>Prerequisites: Webtoolkit (<a style="text-decoration: none;" rel="nofollow" href="https://www.webtoolkit.eu/wt" class="external-link">https://www.webtoolkit.eu/wt</a>), Maybe More</p></div>
+</div>
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<p><span style="color: rgb(36,41,46);text-decoration: none;">Intended to run on the &quot;Watson-BB-Overseer&quot; computer to allow visualization of the collected BB Data.</span></p></div>
+</div>
+</div>
+<div class="columnLayout single" data-layout="single">
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<p><u><span style="color: rgb(128,0,0);text-decoration: none;"><strong>NOTE</strong>: This page has been quickly ported from the <a href="phoBehavioralBoxLabjackController_141560203.html">phoBehavioralBoxLabjackController</a> page, where the web server functionality previously existed.</span></u></p><p><br/></p><p><span style="color: rgb(0,0,0);text-decoration: none;">In short, you launch the &quot;</span><span style="color: rgb(0,0,0);text-decoration: none;">PhoBBOverseerServer&quot; software on Overseer, I believe it's located on the desktop, and a terminal window opens similar to how it does for </span><span style="color: rgb(0,0,0);text-decoration: none;">phoBehavioralBoxLabjackControl. After it starts up and processes the .csv files present on Overseer, you can access the page using <a href="http://127.0.0.1:8080" class="external-link" rel="nofollow">http://127.0.0.1:8080</a> only from Overseer itself. This is because that IP address (127.0.0.1) is not a real IP address, it's what's called a loopback address, and it's a universal shorthand meaning &quot;the local computer requesting the page&quot;. After you ensure you can access it from a browser on Overseer itself, you can try accessing it from a computer on the same network using Overseer's network IP address. For example: http://</span><span style="color: rgb(0,0,0);text-decoration: none;">10.17.152.29:8080 was the correct address last time I was there, but it may have changed since then.</span></p><h3 style="text-decoration: none;" id="PhoBBOverseerServer-Webserver">Webserver</h3><p style="">The configuration file &quot;C:/Common/config/phoBehavioralBoxLabjackController-WT_config.xml&quot; must be in place.</p><p style="">c:/witty</p><p style="">The webserver makes use of a library called Webtoolkit (<a href="https://www.webtoolkit.eu/wt" rel="nofollow" class="external-link" style="text-decoration: none;">https://www.webtoolkit.eu/wt</a>) to display historical information.</p><p style="">An output log will be created in &quot;C:/Common/info/webServerAccessLog.log&quot;</p><p style=""><br/></p><p style=""><br/></p></div>
+</div>
+</div>
+<div class="columnLayout single" data-layout="single">
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<h2 id="PhoBBOverseerServer-HistoricalNote:"><span style="color: rgb(0,0,0);text-decoration: none;">Historical Note:</span></h2><p><span style="color: rgb(0,0,0);text-decoration: none;">the webserver was previously part of the phoBehavoiralBoxLabjackController software, but it was factored out to improve flexibility/performance and ensure that a problem with the framework that runs the webserver couldn't result in a crash of the data acquisition software (which would mean a loss of data during the period it was down). Also, keep in mind that the phoBehavioralBoxLabjackControl doesn't regularly run on Overseer, as there isn't a Labjack/box attached to it.</span></p><p><br/></p></div>
+</div>
+</div>
+</div>
+                    </div>
+
+                                        
+                                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on Mar 24, 2022 11:12</p>
+                    <div id="footer-logo"><a href="http://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>
